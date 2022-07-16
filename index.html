@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Rough.css">
+   
+</head>
+<body>
+    <h1>User Input Calculator</h1>
+    <ul>
+        <li>
+            <h3 id="add"></h3>
+        </li>
+        <li>
+            <h3 id="sub"></h3>
+        </li>
+    </ul>
+    <p id="res"></p>
+
+   
+
+    <script>
+        var a=parseInt(prompt("Enter the First number"));
+var b=parseInt(prompt("Enter the Second number"));
+
+var sum=a+b
+var sub=a-b
+
+console.log(`The result of Addition is: ${sum}`);
+console.log(`The result of Subtraction is: ${sub}`);
+
+alert(`The result of Addition is: ${sum}`);
+alert(`The result of Subtraction is: ${sub}`);
+
+document.getElementById("add").innerHTML=`The result of Addition is: ${sum}`;
+document.getElementById("sub").innerHTML=`The result of Subtraction is: ${sub}`;
+    </script>
+</body>
+</html>
